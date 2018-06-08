@@ -2,7 +2,7 @@
 tSF_Intro_ShowCurrentTime   = true;
 
 // 1st line -- Date in format DD/MM/YYYY. Use "%1/%2/%3" to use MissionDate.
-tSF_Intro_LineText1	= "03/09/12";
+tSF_Intro_LineText1	= "03/09/2012";
 tSF_Intro_LineStyle1	= "<t align = 'right' shadow = '1' size = '0.7' font='PuristaBold'><br />%1</t>";
 
 // 2nd line
@@ -10,7 +10,7 @@ tSF_Intro_LineText2	= "Заргабад, Такистан";
 tSF_Intro_LineStyle2	= "<t align = 'right' shadow = '1' size = '0.7' font='PuristaBold'><br />%1</t>";
 
 // 3rd line
-tSF_Intro_LineText3	= "Операция 'First steps'";
+tSF_Intro_LineText3	= "'Первые шаги'";
 tSF_Intro_LineStyle3	= "<t align = 'right' shadow = '1' size = '0.9' font='PuristaBold'><br />%1</t>";
 
 // Other settings

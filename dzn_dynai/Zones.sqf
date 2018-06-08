@@ -33,15 +33,16 @@
 ]
 
 ,[
-	"patr1" /* Zone Name */
+	"patr2" /* Zone Name */
 	,"EAST",true, /* Side, is Active */ [],[]
 	/* Groups: */
 	,[
 		[
-			2, /* Groups quantity */
+			1, /* Groups quantity */
 			/* Units */
 			[
 				["O_Soldier_F", [], "kit_random_ir"]
+				,["O_Soldier_F", [], "kit_random_ir"]
 				,["O_Soldier_F", [], "kit_random_ir"]
 				,["O_Soldier_F", [], "kit_random_ir"]
 			]
@@ -51,16 +52,18 @@
 	,["LIMITED","SAFE","YELLOW","WEDGE"]
 ]
 
+
 ,[
-	"patr2" /* Zone Name */
+	"patr1" /* Zone Name */
 	,"EAST",true, /* Side, is Active */ [],[]
 	/* Groups: */
 	,[
 		[
-			2, /* Groups quantity */
+			1, /* Groups quantity */
 			/* Units */
 			[
 				["O_Soldier_F", [], "kit_random_ir"]
+				,["O_Soldier_F", [], "kit_random_ir"]
 				,["O_Soldier_F", [], "kit_random_ir"]
 				,["O_Soldier_F", [], "kit_random_ir"]
 			]
@@ -82,23 +85,13 @@
 				["O_Soldier_F", [], "kit_random_pmc"]
 				,["O_Soldier_F", [], "kit_random_pmc"]
 				,["O_Soldier_F", [], "kit_random_pmc"]
-			]
-		]
-	]
-	/* Behavior: Speed, Behavior, Combat mode, Formation */
-	,["LIMITED","SAFE","YELLOW","WEDGE"]
-]
-
-,[
-	"patr3" /* Zone Name */
-	,"EAST",true, /* Side, is Active */ [],[]
-	/* Groups: */
-	,[
-		[
-			2, /* Groups quantity */
+				]
+		,[
+			1, /* Groups quantity */
 			/* Units */
 			[
 				["O_Soldier_F", [], "kit_random_ir"]
+				,["O_Soldier_F", [], "kit_random_ir"]
 				,["O_Soldier_F", [], "kit_random_ir"]
 				,["O_Soldier_F", [], "kit_random_ir"]
 			]

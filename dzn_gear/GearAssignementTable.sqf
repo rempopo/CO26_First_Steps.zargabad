@@ -14,9 +14,8 @@
 
 A "1'1 Командир группы"       TO "kit_op_r" KIT
 , A "Повстанец"               TO "kit_op_r" KIT
-, A "Старший повстанец"       TO "kit_op_r" KIT
+, A "Старший стрелок"         TO "kit_op_r" KIT
 , A "1'2 Командир группы"     TO "kit_op_r" KIT
 , A "1'3 Командир группы"     TO "kit_op_r" KIT
-, A "Старший Повстанец"       TO "kit_op_r" KIT
 , A "1'0 Командир повстанцев" TO "kit_op_r" KIT
 , A "Помощник командира"      TO "kit_op_r" KIT

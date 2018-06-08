@@ -18,7 +18,7 @@ tSF_module_tSNotes = true;
 tSF_module_tSNotesSettings = true;
 
 tSF_module_CCP = true;
-tSF_module_FARP = true;
+tSF_module_FARP = false;
 tSF_module_Interactives = false;
 tSF_module_ACEActions = true;
 tSF_module_AirborneSupport = false;

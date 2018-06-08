@@ -3,7 +3,7 @@
         waitUntil { !isNil "MissionDate" };
 
         // dzn Gear 	(set true to engage Edit mode)
-        [false] execVM "dzn_gear\dzn_gear_init.sqf";
+        [true] execVM "dzn_gear\dzn_gear_init.sqf";
 
         // dzn DynAI
         [] execVM "dzn_dynai\dzn_dynai_init.sqf";

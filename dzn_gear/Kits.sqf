@@ -43,7 +43,7 @@
 #define NVG_NIGHT_ITEM		if (daytime < 9 || daytime > 18) then { "NVGoggles_OPFOR" } else { "" }
 #define BINOCULAR_ITEM		"Binocular"
 
-#define ASSIGNED_ITEMS_OP		"ItemMap","ItemCompass","ItemWatch","", NVG_NIGHT_ITEM
+#define ASSIGNED_ITEMS_OP		"ItemMap","ItemCompass","ItemWatch",""
 #define ASSIGNED_ITEMS__OP_L	"ItemMap","ItemCompass","ItemWatch","", NVG_NIGHT_ITEM, BINOCULAR_ITEM
 
 #define ASSIGNED_ITEMS		"ItemMap","ItemCompass","ItemWatch","ItemRadio", NVG_NIGHT_ITEM
@@ -62,6 +62,7 @@
 
 #define op_w ["CUP_srifle_LeeEnfield","arifle_KA_SKS_F","CUP_arifle_Sa58V_camo","hlc_rifle_SLR","rhs_weap_akm","hlc_rifle_FAL5000","rhs_weap_pm63","CUP_arifle_Sa58P"]
 #define op_a ["CUP_10x_303_M","10Rnd_M43_762x39_Ball","CUP_30Rnd_Sa58_M_TracerG","hlc_20Rnd_762x51_B_fal","rhs_30Rnd_762x39mm","hlc_20Rnd_762x51_B_fal","rhs_30Rnd_762x39mm","CUP_30Rnd_Sa58_M_TracerG"]
+
 
 kit_op_r = [
 	["<EQUIPEMENT >>  ",op_u,op_v,"",op_h,op_g],
@@ -83,12 +84,34 @@ kit_op_r = [
 #define pmc_w ["hlc_rifle_G36A1","hlc_rifle_G36KA1","hlc_rifle_G36C"]
 #define pmc_a ["30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"]
 
-cargo_kit_cargo = [
-	[["hlc_rifle_g3a3v",20],["rhs_weap_pkm",10],["CUP_glaunch_M79",10],["rhs_weap_rpg26",6],["hlc_rifle_FAL5061",20],["RH_M16a1",20]],
-	[["hlc_20rnd_762x51_b_G3",60],["rhs_100Rnd_762x54mmR",20],["1Rnd_HE_Grenade_shell",50],["hlc_10Rnd_762x51_B_fal",60],["20Rnd_556x45_Stanag",60]],
+cargo_kit1_cargo = [
+	[["hlc_rifle_g3a3v",10],["hlc_rifle_FAL5061",10],["RH_M16a1",10]],
+	[],
+	[],
+	[]
+];
+
+cargo_kit4_cargo = [
+	[["rhs_weap_pkm",5],["CUP_glaunch_M79",10],["rhs_weap_rpg26",6]],
+	[],
+	[],
+	[]
+];
+
+cargo_kit2_cargo = [
+	[],
+	[["hlc_20rnd_762x51_b_G3",20],["rhs_100Rnd_762x54mmR",10],["1Rnd_HE_Grenade_shell",30],["hlc_10Rnd_762x51_B_fal",20],["20Rnd_556x45_Stanag",20]],
+	[],
+	[]
+];
+
+cargo_kit3_cargo = [
+	[],
+	[],
 	[["CUP_V_I_RACS_Carrier_Rig_3",30],["CUP_H_USArmy_Helmet_M1_Olive",30],["ItemRadio",30]],
 	[["CUP_B_AlicePack_Khaki",30],["tf_rt1523g_black",5]]
 ];
+
 
 
 kit_random_pmc = [
@@ -103,7 +126,7 @@ kit_pmc_r = [
 	["<PRIMARY WEAPON >>  ",pmc_w,pmc_a,["","","",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","hgun_P07_F","16Rnd_9x21_Mag",["","","",""]],
-	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_L],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
 	["<VEST ITEMS >> ",[["HandGrenade",2],["30Rnd_556x45_Stanag_green",7]]],
 	["<BACKPACK ITEMS >> ",[]]
@@ -114,7 +137,7 @@ kit_pmc_gr = [
 	["<PRIMARY WEAPON >>  ","hlc_rifle_G36A1AG36","30Rnd_556x45_Stanag_green",["","","",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","hgun_P07_F","16Rnd_9x21_Mag",["","","",""]],
-	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_L],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
 	["<VEST ITEMS >> ",[["HandGrenade",2],["PRIMARY MAG",7],["1Rnd_HE_Grenade_shell",6]]],
 	["<BACKPACK ITEMS >> ",[]]
@@ -136,7 +159,7 @@ kit_pmc_mm = [
 	["<PRIMARY WEAPON >>   ","CUP_srifle_M110","CUP_20Rnd_762x51_B_M110",["","","CUP_optic_Leupold_VX3",""]],
 	["<LAUNCHER WEAPON >>  ","","",["","","",""]],
 	["<HANDGUN WEAPON >>  ","hgun_P07_F","16Rnd_9x21_Mag",["","","",""]],
-	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS_L],
+	["<ASSIGNED ITEMS >>  ", ASSIGNED_ITEMS],
 	["<UNIFORM ITEMS >> ",[UNIFORM_ITEMS]],
 	["<VEST ITEMS >> ",[["HandGrenade",2],["PRIMARY MAG",5],["HANDGUN MAG",1]]],
 	["<BACKPACK ITEMS >> ",[]]

@@ -48,5 +48,39 @@ tSF_MissionCondition_DefaultCheckTimer 			= 15;
  */
 
 // Код условия может быть строкой или кодом в { }
-MissionCondition1 = [ "WIN", "(VIP1 inArea baseTrg) && (VIP2 inArea baseTrg) (!alive KILL) && {call fnc_CheckPlayersReturned}", "All objectives done" ];
-MissionCondition2 = [ "WIPED", { call fnc_isAllDead }, "All dead", 30 ];
+MissionCondition1 = [ "WIN", {
+	VIP1 inArea baseTrg
+	&& VIP2 inArea baseTrg 
+	&& !alive KILL
+	&& {call fnc_CheckPlayersReturned} 
+}, "2 vip saved, hvt dead" ];
+
+MissionCondition2 = [ "WIN2", {
+	VIP1 inArea baseTrg
+	&& VIP2 inArea baseTrg 
+	&& alive KILL
+	&& {call fnc_CheckPlayersReturned} 
+}, "2 vip saved, hvt alive" ];
+						
+MissionCondition3 = [ "WIN3", {
+	((VIP1 inArea baseTrg) OR (VIP2 inArea baseTrg))
+	&& ((!alive VIP1) OR (!alive VIP2)) 
+	&& !alive KILL
+	&& {call fnc_CheckPlayersReturned}
+}, "1 vip saved, 1 vip dead, hvt dead" ];
+						
+MissionCondition4 = [ "WIN4", {
+	((VIP1 inArea baseTrg) OR (VIP2 inArea baseTrg))
+	&& ((!alive VIP1) OR (!alive VIP2)) 
+	&& alive KILL
+	&& {call fnc_CheckPlayersReturned} 
+}, "1 vip saved, 1 vip dead, hvt alive" ];
+
+MissionCondition5 = [ "WIN5", {
+    ((!alive VIP1) OR (!alive VIP2)) 
+	&& !alive KILL
+	&& {call fnc_CheckPlayersReturned} 
+}, "2 vip dead, hvt dead" ];
+						
+MissionCondition6 = [ "WIPED", { call fnc_isAllDead }, "All dead", 30 ];
+

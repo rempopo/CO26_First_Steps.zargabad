@@ -85,14 +85,14 @@ kit_op_r = [
 #define pmc_a ["30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"]
 
 cargo_kit1_cargo = [
-	[["hlc_rifle_g3a3v",10],["hlc_rifle_FAL5061",10],["RH_M16a1",10]],
+	[["hlc_rifle_g3a3v",5],["hlc_rifle_FAL5061",5],["RH_M16a1",5]],
 	[],
 	[],
 	[]
 ];
 
 cargo_kit4_cargo = [
-	[["rhs_weap_pkm",5],["CUP_glaunch_M79",10],["rhs_weap_rpg26",6]],
+	[["rhs_weap_pkm",2],["CUP_glaunch_M79",5],["rhs_weap_rpg26",3]],
 	[],
 	[],
 	[]
@@ -110,6 +110,13 @@ cargo_kit3_cargo = [
 	[],
 	[["CUP_V_I_RACS_Carrier_Rig_3",30],["CUP_H_USArmy_Helmet_M1_Olive",30],["ItemRadio",30]],
 	[["CUP_B_AlicePack_Khaki",30],["tf_rt1523g_black",5]]
+];
+
+cargo_kit_setc_cargo = [
+	[],
+	[["CUP_PipeBomb_M",3]],
+	[["ACE_Clacker",2]],
+	[["CUP_B_AlicePack_Khaki",1]]
 ];
 
 

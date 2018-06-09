@@ -13,7 +13,7 @@ PlayersBaseTrigger = if (!isNil "baseTrg") then { baseTrg } else { "" };
 tSF_MissionCondition_DefaultCheckTimer 			= 15;
 
 // If you're Lim~, then you may need this. Uncomment to use.
-// if (isNil "ts_tasks") then { ts_tasks = 0 };
+ if (isNil "ts_tasks") then { ts_tasks = 0 };
 
 /*
  * List of mission Ends and Conditions (up to 20 conditions allowed)

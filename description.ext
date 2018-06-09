@@ -13,7 +13,20 @@ respawn = 3;
 respawnDelay = 9999999; 
 
 class Params
-{   
+{     
+	class overview_line0
+	{
+		title = "Обзор:";
+		values[] = {0};
+		texts[] = {""};
+	};
+	class overview_line1
+	{
+		title = "Рейд повстанцев на базы правительственных войск. Цели: Уничтожть офицера, освободить старейшин, захватить вооружение";
+		values[] = {0};
+		texts[] = {""};
+	};
+	
 	class par_daytime
 	{
 	    title = "Время суток";

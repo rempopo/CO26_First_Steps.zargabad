@@ -1,5 +1,5 @@
 # CO26_Operation_first_steps.zargabad
-Повстанцы наносят удар 
+Повстанцы атакуют правительственные войска.
 
 <img src='https://github.com/rempopo/CO26_Operation_first_steps.zargabad/raw/master/overview.jpg' />	
 

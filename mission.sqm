@@ -384,7 +384,7 @@ class ScenarioData
 	overviewText="Повстанцы атакуют правительственные войска.";
 	overViewPicture="overview.jpg";
 	overViewPictureLocked="overview.jpg";
-	onLoadMission="Повстанцы атакуют правительственные войска.";
+	onLoadMission="Повстанцы атакуют правительственные войска и пытаются спасти старейшин.";
 	loadScreen="overview.jpg";
 	saving=0;
 	respawnDialog=0;

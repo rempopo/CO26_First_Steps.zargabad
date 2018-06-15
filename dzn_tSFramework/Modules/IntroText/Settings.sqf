@@ -2,7 +2,7 @@
 tSF_Intro_ShowCurrentTime   = true;
 
 // 1st line -- Date in format DD/MM/YYYY. Use "%1/%2/%3" to use MissionDate.
-tSF_Intro_LineText1	= ""%1/%2/%3";
+tSF_Intro_LineText1	= "%1/%2/%3";
 tSF_Intro_LineStyle1	= "<t align = 'right' shadow = '1' size = '0.7' font='PuristaBold'><br />%1</t>";
 
 // 2nd line

@@ -46,7 +46,7 @@ class Params
 		,"Дождь"
 		,"Гроза"
 	    };
-	    default = 0;
+	    default = 1;
 	};
 	class dzn_brv_enabled
 	{

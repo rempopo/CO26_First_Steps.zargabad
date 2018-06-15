@@ -63,21 +63,21 @@ MissionCondition2 = [ "WIN2", {
 }, "2 vip saved, hvt alive" ];
 						
 MissionCondition3 = [ "WIN3", {
-	((VIP1 inArea baseTrg) OR (VIP2 inArea baseTrg))
-	&& ((!alive VIP1) OR (!alive VIP2)) 
-	&& !alive KILL
+	(( alive VIP1 && !alive VIP2 && VIP1 inArea baseTrg )
+	|| ( alive VIP2 && !alive VIP1 && VIP1 inArea baseTrg )
+	) && !alive KILL
 	&& {call fnc_CheckPlayersReturned}
 }, "1 vip saved, 1 vip dead, hvt dead" ];
 						
 MissionCondition4 = [ "WIN4", {
-	((VIP1 inArea baseTrg) OR (VIP2 inArea baseTrg))
-	&& ((!alive VIP1) OR (!alive VIP2)) 
-	&& alive KILL
-	&& {call fnc_CheckPlayersReturned} 
+	(( alive VIP1 && !alive VIP2 && VIP1 inArea baseTrg )
+	|| ( alive VIP2 && !alive VIP1 && VIP1 inArea baseTrg )
+	) && alive KILL
+	&& {call fnc_CheckPlayersReturned}
 }, "1 vip saved, 1 vip dead, hvt alive" ];
 
 MissionCondition5 = [ "WIN5", {
-    ((!alive VIP1) OR (!alive VIP2)) 
+     (!alive VIP1 && !alive VIP2)
 	&& !alive KILL
 	&& {call fnc_CheckPlayersReturned} 
 }, "2 vip dead, hvt dead" ];

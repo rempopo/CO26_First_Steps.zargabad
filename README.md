@@ -8,7 +8,7 @@
 ### Changelog: 
 ...
 
-# NOT APPROVED
+# APPROVED
 | Reviewer | Result |
 | ------------ | ------------- |
 | lim | Approved |
